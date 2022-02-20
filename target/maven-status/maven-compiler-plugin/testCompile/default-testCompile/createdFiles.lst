@@ -1,0 +1,9 @@
+com\qt\qualithon\ui\imdb\WebApp.class
+com\qt\qualithon\api\omdb\OMDbAPI.class
+com\qt\qualithon\test\MovieSearchTest.class
+com\qt\qualithon\ui\imdb\MoviePage.class
+com\qt\qualithon\TestSession.class
+com\qt\qualithon\model\Movie.class
+com\qt\qualithon\ui\imdb\HomePage.class
+com\qt\qualithon\ui\Page.class
+com\qt\qualithon\ui\imdb\ResultsPage.class

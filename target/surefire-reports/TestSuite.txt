@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 343.42 s <<< FAILURE! - in TestSuite
+com.qt.qualithon.test.MovieSearchTest.testMovieMetadataOnWebHasCorrectMaturityRating[The Dark Knight Rises](2)  Time elapsed: 10.813 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<"[PG-13]"> but was:<"[12A]">
+	at com.qt.qualithon.test.MovieSearchTest.testMovieMetadataOnWebHasCorrectMaturityRating(MovieSearchTest.java:165)
+
+com.qt.qualithon.test.RottenTomatoesMovieSearchTest.testMovieMetadataOnWebHasCorrectGenres[A Clockwork Orange](1)  Time elapsed: 33.294 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting ArrayList:
+  ["Drama", " Comedy"]
+to contain only:
+  ["Crime", "Sci-Fi"]
+element(s) not found:
+  ["Crime", "Sci-Fi"]
+and element(s) not expected:
+  ["Drama", " Comedy"]
+
+	at com.qt.qualithon.test.RottenTomatoesMovieSearchTest.testMovieMetadataOnWebHasCorrectGenres(RottenTomatoesMovieSearchTest.java:141)
+
+com.qt.qualithon.test.RottenTomatoesMovieSearchTest.testMovieMetadataOnWebHasCorrectMaturityRating[A Clockwork Orange](1)  Time elapsed: 18.748 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<"[X]"> but was:<"[R]">
+	at com.qt.qualithon.test.RottenTomatoesMovieSearchTest.testMovieMetadataOnWebHasCorrectMaturityRating(RottenTomatoesMovieSearchTest.java:160)
+
+com.qt.qualithon.test.RottenTomatoesMovieSearchTest.testMovieMetadataOnWebHasCorrectWriters[A Clockwork Orange](1)  Time elapsed: 34.014 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting ArrayList:
+  ["Stanley Kubrick"]
+to contain only:
+  ["Stanley Kubrick", "Anthony Burgess"]
+but could not find the following element(s):
+  ["Anthony Burgess"]
+
+	at com.qt.qualithon.test.RottenTomatoesMovieSearchTest.testMovieMetadataOnWebHasCorrectWriters(RottenTomatoesMovieSearchTest.java:121)
+

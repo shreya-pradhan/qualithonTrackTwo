@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods, 4 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.RottenTomatoesMovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectGenres(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectGenres(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectMaturityRating(The Dark Knight Rises)">testMovieMetadataOnWebHasCorrectMaturityRating(The Dark Knight Rises)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.RottenTomatoesMovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectMaturityRating(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectMaturityRating(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.RottenTomatoesMovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectWriters(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectWriters(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.RottenTomatoesMovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectDirectorName(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectDirectorName(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectDirectorName(The Dark Knight Rises)">testMovieMetadataOnWebHasCorrectDirectorName(The Dark Knight Rises)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectDirectorName(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectDirectorName(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectGenres(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectGenres(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectGenres(The Dark Knight Rises)">testMovieMetadataOnWebHasCorrectGenres(The Dark Knight Rises)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectMaturityRating(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectMaturityRating(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.RottenTomatoesMovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectMovieRatingScore(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectMovieRatingScore(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectMovieRatingScore(The Dark Knight Rises)">testMovieMetadataOnWebHasCorrectMovieRatingScore(The Dark Knight Rises)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectMovieRatingScore(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectMovieRatingScore(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectReleaseYear(The Dark Knight Rises)">testMovieMetadataOnWebHasCorrectReleaseYear(The Dark Knight Rises)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.RottenTomatoesMovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectReleaseYear(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectReleaseYear(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectReleaseYear(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectReleaseYear(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectWriters(A Clockwork Orange)">testMovieMetadataOnWebHasCorrectWriters(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testMovieMetadataOnWebHasCorrectWriters(The Dark Knight Rises)">testMovieMetadataOnWebHasCorrectWriters(The Dark Knight Rises)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.RottenTomatoesMovieSearchTest" hash-for-method="testSearchByExactMovieTitleReturnsMovieAsFirstResult(A Clockwork Orange)">testSearchByExactMovieTitleReturnsMovieAsFirstResult(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testSearchByExactMovieTitleReturnsMovieAsFirstResult(A Clockwork Orange)">testSearchByExactMovieTitleReturnsMovieAsFirstResult(A Clockwork Orange)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.qt.qualithon.test.MovieSearchTest" hash-for-method="testSearchByExactMovieTitleReturnsMovieAsFirstResult(The Dark Knight Rises)">testSearchByExactMovieTitleReturnsMovieAsFirstResult(The Dark Knight Rises)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qt.qualithon.test.MovieSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectMaturityRating(The Dark Knight Rises)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectMaturityRating(The Dark Knight Rises) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectMaturityRating</span>
+                  <span class="parameters">(The Dark Knight Rises)</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;&quot;[PG-13]&quot;&gt; but was:&lt;&quot;[12A]&quot;&gt;
+	at com.qt.qualithon.test.MovieSearchTest.testMovieMetadataOnWebHasCorrectMaturityRating(MovieSearchTest.java:165)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qt.qualithon.test.RottenTomatoesMovieSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectGenres(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectGenres(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectGenres</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expecting ArrayList:
+  [&quot;Drama&quot;, &quot; Comedy&quot;]
+to contain only:
+  [&quot;Crime&quot;, &quot;Sci-Fi&quot;]
+element(s) not found:
+  [&quot;Crime&quot;, &quot;Sci-Fi&quot;]
+and element(s) not expected:
+  [&quot;Drama&quot;, &quot; Comedy&quot;]
+
+	at com.qt.qualithon.test.RottenTomatoesMovieSearchTest.testMovieMetadataOnWebHasCorrectGenres(RottenTomatoesMovieSearchTest.java:141)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectMaturityRating(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectMaturityRating(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectMaturityRating</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;&quot;[X]&quot;&gt; but was:&lt;&quot;[R]&quot;&gt;
+	at com.qt.qualithon.test.RottenTomatoesMovieSearchTest.testMovieMetadataOnWebHasCorrectMaturityRating(RottenTomatoesMovieSearchTest.java:160)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectWriters(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectWriters(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectWriters</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expecting ArrayList:
+  [&quot;Stanley Kubrick&quot;]
+to contain only:
+  [&quot;Stanley Kubrick&quot;, &quot;Anthony Burgess&quot;]
+but could not find the following element(s):
+  [&quot;Anthony Burgess&quot;]
+
+	at com.qt.qualithon.test.RottenTomatoesMovieSearchTest.testMovieMetadataOnWebHasCorrectWriters(RottenTomatoesMovieSearchTest.java:121)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qt.qualithon.test.MovieSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectDirectorName(The Dark Knight Rises)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectDirectorName(The Dark Knight Rises) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectDirectorName</span>
+                  <span class="parameters">(The Dark Knight Rises)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectDirectorName(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectDirectorName(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectDirectorName</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectGenres(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectGenres(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectGenres</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectGenres(The Dark Knight Rises)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectGenres(The Dark Knight Rises) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectGenres</span>
+                  <span class="parameters">(The Dark Knight Rises)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectMaturityRating(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectMaturityRating(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectMaturityRating</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectMovieRatingScore(The Dark Knight Rises)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectMovieRatingScore(The Dark Knight Rises) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectMovieRatingScore</span>
+                  <span class="parameters">(The Dark Knight Rises)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectMovieRatingScore(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectMovieRatingScore(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectMovieRatingScore</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectReleaseYear(The Dark Knight Rises)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectReleaseYear(The Dark Knight Rises) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectReleaseYear</span>
+                  <span class="parameters">(The Dark Knight Rises)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectReleaseYear(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectReleaseYear(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectReleaseYear</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectWriters(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectWriters(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectWriters</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectWriters(The Dark Knight Rises)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectWriters(The Dark Knight Rises) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectWriters</span>
+                  <span class="parameters">(The Dark Knight Rises)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchByExactMovieTitleReturnsMovieAsFirstResult(A Clockwork Orange)">
+                  </a> <!-- testSearchByExactMovieTitleReturnsMovieAsFirstResult(A Clockwork Orange) -->
+                  <span class="method-name">testSearchByExactMovieTitleReturnsMovieAsFirstResult</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchByExactMovieTitleReturnsMovieAsFirstResult(The Dark Knight Rises)">
+                  </a> <!-- testSearchByExactMovieTitleReturnsMovieAsFirstResult(The Dark Knight Rises) -->
+                  <span class="method-name">testSearchByExactMovieTitleReturnsMovieAsFirstResult</span>
+                  <span class="parameters">(The Dark Knight Rises)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qt.qualithon.test.RottenTomatoesMovieSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectDirectorName(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectDirectorName(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectDirectorName</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectMovieRatingScore(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectMovieRatingScore(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectMovieRatingScore</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMovieMetadataOnWebHasCorrectReleaseYear(A Clockwork Orange)">
+                  </a> <!-- testMovieMetadataOnWebHasCorrectReleaseYear(A Clockwork Orange) -->
+                  <span class="method-name">testMovieMetadataOnWebHasCorrectReleaseYear</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchByExactMovieTitleReturnsMovieAsFirstResult(A Clockwork Orange)">
+                  </a> <!-- testSearchByExactMovieTitleReturnsMovieAsFirstResult(A Clockwork Orange) -->
+                  <span class="method-name">testSearchByExactMovieTitleReturnsMovieAsFirstResult</span>
+                  <span class="parameters">(A Clockwork Orange)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot; parallel=&quot;methods&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qt.qualithon.test.MovieSearchTest&quot;/&gt;
+      &lt;class name=&quot;com.qt.qualithon.test.RottenTomatoesMovieSearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testMovieMetadataOnWebHasCorrectDirectorName')
+data.setCell(0, 2, 'com.qt.qualithon.test.RottenTomatoesMovieSearchTest')
+data.setCell(0, 3, 55340);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testMovieMetadataOnWebHasCorrectMovieRatingScore')
+data.setCell(1, 2, 'com.qt.qualithon.test.RottenTomatoesMovieSearchTest')
+data.setCell(1, 3, 54939);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testMovieMetadataOnWebHasCorrectGenres')
+data.setCell(2, 2, 'com.qt.qualithon.test.RottenTomatoesMovieSearchTest')
+data.setCell(2, 3, 54353);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSearchByExactMovieTitleReturnsMovieAsFirstResult')
+data.setCell(3, 2, 'com.qt.qualithon.test.RottenTomatoesMovieSearchTest')
+data.setCell(3, 3, 54004);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testMovieMetadataOnWebHasCorrectReleaseYear')
+data.setCell(4, 2, 'com.qt.qualithon.test.RottenTomatoesMovieSearchTest')
+data.setCell(4, 3, 54003);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testMovieMetadataOnWebHasCorrectMaturityRating')
+data.setCell(5, 2, 'com.qt.qualithon.test.RottenTomatoesMovieSearchTest')
+data.setCell(5, 3, 53950);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testMovieMetadataOnWebHasCorrectWriters')
+data.setCell(6, 2, 'com.qt.qualithon.test.RottenTomatoesMovieSearchTest')
+data.setCell(6, 3, 53698);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testMovieMetadataOnWebHasCorrectDirectorName')
+data.setCell(7, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(7, 3, 25506);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testMovieMetadataOnWebHasCorrectGenres')
+data.setCell(8, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(8, 3, 22311);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testMovieMetadataOnWebHasCorrectDirectorName')
+data.setCell(9, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(9, 3, 22309);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testSearchByExactMovieTitleReturnsMovieAsFirstResult')
+data.setCell(10, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(10, 3, 20952);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testSearchByExactMovieTitleReturnsMovieAsFirstResult')
+data.setCell(11, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(11, 3, 15910);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testMovieMetadataOnWebHasCorrectWriters')
+data.setCell(12, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(12, 3, 14879);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testMovieMetadataOnWebHasCorrectWriters')
+data.setCell(13, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(13, 3, 14581);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testMovieMetadataOnWebHasCorrectMovieRatingScore')
+data.setCell(14, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(14, 3, 14307);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testMovieMetadataOnWebHasCorrectReleaseYear')
+data.setCell(15, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(15, 3, 14152);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testMovieMetadataOnWebHasCorrectReleaseYear')
+data.setCell(16, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(16, 3, 14096);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testMovieMetadataOnWebHasCorrectMaturityRating')
+data.setCell(17, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(17, 3, 13883);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testMovieMetadataOnWebHasCorrectMovieRatingScore')
+data.setCell(18, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(18, 3, 13717);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testMovieMetadataOnWebHasCorrectMaturityRating')
+data.setCell(19, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(19, 3, 13299);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testMovieMetadataOnWebHasCorrectGenres')
+data.setCell(20, 2, 'com.qt.qualithon.test.MovieSearchTest')
+data.setCell(20, 3, 13269);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qt.qualithon.test.MovieSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectDirectorName(A Clockwork Orange)</span>
+                <span class="method-start">2655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectGenres(A Clockwork Orange)</span>
+                <span class="method-start">2655 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">24965 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">24966 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">25644 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">25660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectDirectorName(The Dark Knight Rises)</span>
+                <span class="method-start">26926 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectGenres(The Dark Knight Rises)</span>
+                <span class="method-start">27019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">40288 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">41007 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectMaturityRating(A Clockwork Orange)</span>
+                <span class="method-start">52280 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">52432 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">53099 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectMovieRatingScore(A Clockwork Orange)</span>
+                <span class="method-start">54252 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">65580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">66276 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMovieMetadataOnWebHasCorrectMaturityRating(The Dark Knight Rises)</span>
+                <span class="method-start">67466 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">68560 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">69213 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectMovieRatingScore(The Dark Knight Rises)</span>
+                <span class="method-start">70498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">81359 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">82046 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectReleaseYear(A Clockwork Orange)</span>
+                <span class="method-start">83279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">84215 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">84852 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectWriters(A Clockwork Orange)</span>
+                <span class="method-start">86285 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">97431 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">98095 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectReleaseYear(The Dark Knight Rises)</span>
+                <span class="method-start">99280 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">100866 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">101524 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectWriters(The Dark Knight Rises)</span>
+                <span class="method-start">102715 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">113376 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">114015 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchByExactMovieTitleReturnsMovieAsFirstResult(A Clockwork Orange)</span>
+                <span class="method-start">115138 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">117594 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qt.qualithon.test.RottenTomatoesMovieSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">118279 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectDirectorName(A Clockwork Orange)</span>
+                <span class="method-start">119473 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qt.qualithon.test.MovieSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">131048 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">131685 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchByExactMovieTitleReturnsMovieAsFirstResult(The Dark Knight Rises)</span>
+                <span class="method-start">132786 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">153739 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qt.qualithon.test.RottenTomatoesMovieSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">154451 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMovieMetadataOnWebHasCorrectGenres(A Clockwork Orange)</span>
+                <span class="method-start">155584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">174813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">175455 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMovieMetadataOnWebHasCorrectMaturityRating(A Clockwork Orange)</span>
+                <span class="method-start">176607 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">209937 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">210607 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectMovieRatingScore(A Clockwork Orange)</span>
+                <span class="method-start">211773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">230557 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">231195 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMovieMetadataOnWebHasCorrectReleaseYear(A Clockwork Orange)</span>
+                <span class="method-start">232338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">266713 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">267357 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMovieMetadataOnWebHasCorrectWriters(A Clockwork Orange)</span>
+                <span class="method-start">268449 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">286342 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSessionSetUp</span>
+                <span class="method-start">286967 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchByExactMovieTitleReturnsMovieAsFirstResult(A Clockwork Orange)</span>
+                <span class="method-start">288108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">322147 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">testTearDown</span>
+                <span class="method-start">342112 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

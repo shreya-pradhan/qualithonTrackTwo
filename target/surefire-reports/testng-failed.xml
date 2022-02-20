@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
+  <test thread-count="2" verbose="0" name="Surefire test(failed)" parallel="methods">
+    <classes>
+      <class name="com.qt.qualithon.test.MovieSearchTest">
+        <methods>
+          <include name="testSessionSetUp"/>
+          <include name="testMovieMetadataOnWebHasCorrectMaturityRating" invocation-numbers="1"/>
+          <include name="testTearDown"/>
+        </methods>
+      </class> <!-- com.qt.qualithon.test.MovieSearchTest -->
+      <class name="com.qt.qualithon.test.RottenTomatoesMovieSearchTest">
+        <methods>
+          <include name="testSessionSetUp"/>
+          <include name="testMovieMetadataOnWebHasCorrectGenres" invocation-numbers="0"/>
+          <include name="testMovieMetadataOnWebHasCorrectWriters" invocation-numbers="0"/>
+          <include name="testTearDown"/>
+          <include name="testMovieMetadataOnWebHasCorrectMaturityRating" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qt.qualithon.test.RottenTomatoesMovieSearchTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
